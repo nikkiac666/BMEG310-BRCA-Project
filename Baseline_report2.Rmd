@@ -1,0 +1,64 @@
+---
+title: "BMEG310 BRCA Report II"
+author: "Group 5: Calla Stanley, Hemanya Sharma, Evan Alanen, Nikki Comfort"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+#install.packages("xfun")
+#install.packages("patchwork")
+
+library(survival)
+library(survminer)
+library(dplyr)
+library("SummarizedExperiment")
+library("psych")
+library(ggplot2)
+library(TCGAbiolinks)
+library(patchwork)
+library(pheatmap)
+library(reshape2)
+library(devtools)
+library(remotes)
+library(ggbiplot)
+
+# add any other libraries used
+```
+
+```{r Load Files}
+clinical <- read.csv("TCGA-BRCA/data_clinical_patient.txt", sep = "\t", header = TRUE, skip = 4)
+mutations <- read.csv("TCGA-BRCA/data_mutations.txt", sep = "\t", header = TRUE)
+rnaseq <- read.csv("TCGA-BRCA/RNAseq_BRCA.csv", header = TRUE)
+```
+
+# Investigation 1: Survival of Mestastasis in RNA (Calla)
+```{r Investigation 1}
+# code here
+```
+
+# Investigation 2: Expression levels of easy early detection (Calla)
+```{r Investigation 2}
+# code here
+```
+
+# Investigation 3: Cancer stage progression by gene expression changes (Hemanya)
+```{r Investigation 3}
+# code here
+```
+
+# Investigation 4: Gene regulation and subtype (Evan)
+```{r Investigation 4}
+# code here
+```
+
+#Investigation 5: Immune Infiltration Inference from Gene Expression (Nikki)
+```{r Investigation 5}
+# code here
+```
+
+# Investigation 6: Identify Expression Biomarkers Predicting Tumor Recurrence (Nikki)
+```{r Investigation 6}
+# code here
+```
+
